@@ -14,13 +14,13 @@ public class TwoFightersOneWinner {
         do {
             if (turn == 'a'){
                 if (fighter1.name.equals(firstAttacker))
-                    fighter2.health = fighter2.health - fighter1.damagePerAttack;
-                else fighter1.health = fighter1.health - fighter2.damagePerAttack;
+                    fighter2.health -= fighter1.damagePerAttack;
+                else fighter1.health -= fighter2.damagePerAttack;
                 turn = 'b';
             } else {
                 if (!fighter2.name.equals(firstAttacker))
-                    fighter1.health = fighter1.health - fighter2.damagePerAttack;
-                else fighter2.health = fighter2.health - fighter1.damagePerAttack;
+                    fighter1.health -= fighter2.damagePerAttack;
+                else fighter2.health -= fighter1.damagePerAttack;
                 turn = 'a';
             }
         } while (fighter1.health > 0 && fighter2.health > 0);
