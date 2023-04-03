@@ -1,4 +1,4 @@
-public class Kata
+public class Small_enough_Beginner
 {
     public static boolean smallEnough(int[] a, int limit){
         for (int j : a) {
