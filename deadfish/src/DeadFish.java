@@ -4,7 +4,7 @@ public class DeadFish {
     public static int[] parse(String data) {
         char[] arr = data.toCharArray();
         int result = 0;
-        int count = data.length() - data.replaceAll("o", "").length();
+        int count = data.replaceAll("[^o]", "").length();
         int [] arr_result = new int[count];
         int position = 0;
         int char_position = 0;
