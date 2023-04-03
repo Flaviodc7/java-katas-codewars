@@ -2,7 +2,7 @@ public class ASum {
 
     public static long findNb(long m) {
         long result = 0;
-        long evaluate_number = 0;
+        long evaluate_number;
         do {
             result++;
             evaluate_number = ((long) Math.pow(result, 2) * (long) Math.pow(result + 1, 2)) / 4;
